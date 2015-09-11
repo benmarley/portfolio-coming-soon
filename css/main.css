@@ -20,3 +20,33 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+img {
+	width: 100%;
+}
+
+.bord-marg {
+	margin: 1em;
+	border:1px solid;
+}
+
+.center-title{
+	width: 100%;
+	text-align: center;
+}
+
+.large-display {
+	display: none;
+}
+
+@media only screen and (min-width: 38em) {
+
+	.hide-on-med {
+		display: hidden;
+	}
+
+	.show-on-medium{
+		display: block;
+	}
+
+}
