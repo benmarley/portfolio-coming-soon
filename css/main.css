@@ -26,7 +26,7 @@ img {
 }
 
 .bord-marg {
-	margin: 1em;
+	margin: .5em;
 	border:1px solid;
 }
 
@@ -34,19 +34,125 @@ img {
 	width: 100%;
 	text-align: center;
 }
-
-.large-display {
+.small-remove {
 	display: none;
 }
 
-@media only screen and (min-width: 38em) {
+.ben-graphic {
+	position: relative;
+	top: 70px;
+}
 
-	.hide-on-med {
-		display: hidden;
+#finger1 {
+
+	-webkit-animation: finger-move-2 100ms linear alternate infinite;
+	animation: finger-move-2 200ms linear alternate infinite;
+}
+
+@-webkit-keyframes finger-move-2 {
+
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
 	}
 
-	.show-on-medium{
+}
+@keyframes finger-move-2 {
+
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+
+}
+
+#finger2 {
+	
+	-webkit-animation: finger-move 400ms linear alternate infinite;
+	animation: finger-move 400ms linear alternate infinite;
+}
+@-webkit-keyframes finger-move {
+
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+
+}
+
+@keyframes finger-move {
+
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+
+}
+
+#finger3 {
+	
+	-webkit-animation: finger-move-3 400ms linear alternate infinite;
+	animation: finger-move-3 100ms linear alternate infinite;
+}
+
+@-webkit-keyframes finger-move-3 {
+
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+
+}
+
+@keyframes finger-move-3 {
+
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+
+}
+
+
+@media only screen and (min-width: 38em) {
+	.medium-remove {
+		display: none;
+
+	}
+
+	.small-remove {
 		display: block;
 	}
+
 
 }
