@@ -112,7 +112,7 @@ img {
 #finger3 {
 	
 	-webkit-animation: finger-move-3 400ms linear alternate infinite;
-	animation: finger-move-3 100ms linear alternate infinite;
+	animation: finger-move-3 300ms linear alternate infinite;
 }
 
 @-webkit-keyframes finger-move-3 {
@@ -121,7 +121,7 @@ img {
 		transform: rotate(0deg);
 	}
 	50% {
-		transform: rotate(-1deg);
+		transform: rotate(-.5deg);
 	}
 	100% {
 		transform: rotate(0deg);
@@ -135,7 +135,7 @@ img {
 		transform: rotate(0deg);
 	}
 	50% {
-		transform: rotate(-1deg);
+		transform: rotate(-.5deg);
 	}
 	100% {
 		transform: rotate(0deg);
@@ -143,6 +143,40 @@ img {
 
 }
 
+
+
+.bounding-box {
+	position: relative;
+}
+
+.spool-left-small {
+	position: absolute;
+	top: 15%;
+	right: 42%;
+	width: 16%;
+	animation: spin 900ms linear infinite;
+}
+
+
+
+.spool-right-small{
+
+	position: absolute;
+	top: 14%;
+	right: 62%;
+	width: 20%;
+	animation: spin 2s linear infinite;
+}
+@keyframes spin{
+	0% {
+		transform: rotate(0deg);
+	}
+		
+	100% {
+		transform: rotate(360deg);
+
+}
+}
 
 @media only screen and (min-width: 38em) {
 	.medium-remove {
@@ -153,6 +187,36 @@ img {
 	.small-remove {
 		display: block;
 	}
+
+	.spool-left {
+	position: absolute;
+	top: 15%;
+	right: 42%;
+	width: 16%;
+	animation: spin 900ms linear infinite;
+
+}
+
+.spool-right {
+	position: absolute;
+	top: 14%;
+	right: 61%;
+	width: 20%;
+	animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin{
+	0% {
+		transform: rotate(0deg);
+	}
+		
+	100% {
+		transform: rotate(360deg);
+
+}
+
+
 
 
 }
