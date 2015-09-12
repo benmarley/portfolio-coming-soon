@@ -44,7 +44,7 @@ img {
 
 .ben-graphic {
 	position: relative;
-	top: 70px;
+	top: 40px;
 }
 
 #finger1 {
@@ -179,6 +179,14 @@ img {
 	100% {
 		transform: rotate(360deg);
 
+}
+}
+
+@media only screen and (min-width: 25em) {
+
+	.ben-graphic {
+	position: relative;
+	top: 70px;
 }
 }
 
