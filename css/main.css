@@ -42,6 +42,7 @@ img {
 .body-text {
 	text-align: center;
 }
+
 .small-remove {
 	display: none;
 }
@@ -52,7 +53,6 @@ img {
 }
 
 #finger1 {
-
 	-webkit-animation: finger-move-2 100ms linear alternate infinite;
 	animation: finger-move-2 200ms linear alternate infinite;
 }
@@ -100,7 +100,6 @@ img {
 	100% {
 		transform: rotate(0deg);
 	}
-
 }
 
 @keyframes finger-move {
@@ -114,7 +113,6 @@ img {
 	100% {
 		transform: rotate(0deg);
 	}
-
 }
 
 #finger3 {
@@ -134,7 +132,6 @@ img {
 	100% {
 		transform: rotate(0deg);
 	}
-
 }
 
 @keyframes finger-move-3 {
@@ -148,10 +145,7 @@ img {
 	100% {
 		transform: rotate(0deg);
 	}
-
 }
-
-
 
 .bounding-box {
 	position: relative;
@@ -165,16 +159,25 @@ img {
 	animation: spin 900ms linear infinite;
 }
 
-
-
 .spool-right-small{
-
 	position: absolute;
 	top: 14%;
 	right: 62%;
 	width: 20%;
 	animation: spin 2s linear infinite;
 }
+
+@-webkit-keyframes spin{
+	0% {
+		transform: rotate(0deg);
+	}
+		
+	100% {
+		transform: rotate(360deg);
+
+}
+}
+
 @keyframes spin{
 	0% {
 		transform: rotate(0deg);
@@ -187,7 +190,6 @@ img {
 }
 
 @media only screen and (min-width: 25em) {
-
 	.ben-graphic {
 	position: relative;
 	top: 70px;
@@ -210,24 +212,29 @@ img {
 	right: 42%;
 	width: 16%;
 	animation: spin 900ms linear infinite;
+	}
 
-}
-
-.spool-right {
+	.spool-right {
 	position: absolute;
 	top: 14%;
 	right: 61%;
 	width: 20%;
 	animation: spin 2s linear infinite;
-
-}
-
-@keyframes spin{
-	0% {
-		transform: rotate(0deg);
 	}
-		
-	100% {
-		transform: rotate(360deg);
 
+	@-webkit-keyframes spin{
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+	}
+
+	@keyframes spin{
+		0% {
+			transform: rotate(0deg);
+		}	
+		100% {
+			transform: rotate(360deg);
+	}
 }
