@@ -38,6 +38,10 @@ img {
 .main-title {
 	font-family: 'Rock Salt', cursive;
 }
+
+.body-text {
+	text-align: center;
+}
 .small-remove {
 	display: none;
 }
