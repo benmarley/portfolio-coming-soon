@@ -66,16 +66,16 @@ img {
 @-webkit-keyframes finger-move-2 {
 
 	0% {
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
 	}
 	50% {
-		transform: rotate(-1deg);
+		-webkit-transform: rotate(-1deg);
 	}
 	100% {
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
 	}
-
 }
+
 @keyframes finger-move-2 {
 
 	0% {
@@ -87,7 +87,6 @@ img {
 	100% {
 		transform: rotate(0deg);
 	}
-
 }
 
 #finger2 {
@@ -95,16 +94,17 @@ img {
 	-webkit-animation: finger-move 400ms linear alternate infinite;
 	animation: finger-move 400ms linear alternate infinite;
 }
+
 @-webkit-keyframes finger-move {
 
 	0% {
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
 	}
 	50% {
-		transform: rotate(-1deg);
+		-webkit-transform: rotate(-1deg);
 	}
 	100% {
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
 	}
 }
 
@@ -130,13 +130,13 @@ img {
 @-webkit-keyframes finger-move-3 {
 
 	0% {
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
 	}
 	50% {
-		transform: rotate(-.5deg);
+		-webkit-transform: rotate(-.5deg);
 	}
 	100% {
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
 	}
 }
 
@@ -162,6 +162,7 @@ img {
 	top: 15%;
 	right: 42%;
 	width: 16%;
+	-webkit-animation: spin 900ms linear infinite;
 	animation: spin 900ms linear infinite;
 }
 
@@ -170,16 +171,17 @@ img {
 	top: 14%;
 	right: 62%;
 	width: 20%;
+	-webkit-animation: spin 2s linear infinite;
 	animation: spin 2s linear infinite;
 }
 
 @-webkit-keyframes spin{
 	0% {
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
 	}
 		
 	100% {
-		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
 
 }
 }
@@ -191,15 +193,12 @@ img {
 		
 	100% {
 		transform: rotate(360deg);
-
 }
 }
 
 .soc-links {
 	display: inline-block;
 	padding:0;
-
-
 }
 
 .soc-links a {
@@ -230,6 +229,7 @@ img {
 	top: 15%;
 	right: 42%;
 	width: 16%;
+	-webkit-animation: spin 900ms linear infinite;
 	animation: spin 900ms linear infinite;
 	}
 
@@ -238,15 +238,16 @@ img {
 	top: 14%;
 	right: 61%;
 	width: 20%;
+	-webkit-animation: spin 2s linear infinite;
 	animation: spin 2s linear infinite;
 	}
 
 	@-webkit-keyframes spin{
 		0% {
-			transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
 		}
 		100% {
-			transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
 	}
 
 	@keyframes spin{
