@@ -201,6 +201,10 @@ img {
 	padding:0;
 }
 
+.soc-links li {
+	display: inline-block;
+} 
+
 .soc-links a {
 	color: #807C73;
 	text-decoration: none;
