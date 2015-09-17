@@ -26,21 +26,27 @@ img {
 }
 
 .bord-marg {
-	margin: .5em;
-	border:1px solid;
+	/*margin: .5em;*/
+	border-bottom:1px solid;
 }
 
 .center-title{
 	width: 100%;
 	text-align: center;
+	background-color: #CDD1D4;
 }
 
 .main-title {
 	font-family: 'Rock Salt', cursive;
+	color: #333333;
+	padding-bottom: 1em;
+	padding-top: .5em;
+	border-bottom: 8px solid #333333;
 }
 
 .body-text {
 	text-align: center;
+	color: #333333;
 }
 
 .small-remove {
@@ -187,6 +193,20 @@ img {
 		transform: rotate(360deg);
 
 }
+}
+
+.soc-links {
+	display: inline-block;
+	padding:0;
+
+
+}
+
+.soc-links a {
+	color: #807C73;
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 140%;
 }
 
 @media only screen and (min-width: 25em) {
